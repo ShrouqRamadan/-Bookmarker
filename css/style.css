@@ -1,0 +1,51 @@
+*{
+    font-family:arial;
+
+}
+
+h1{
+    color: #AAAAAA;
+}
+.line{
+    height: 1px;
+    background-color:#CBCBCB ;
+}
+.bookmark {
+    background-color:#EEEEEE ;
+}
+input {
+   width: 100%;
+   border: 0;
+}
+/* input:focus {
+   outline: 0;
+   border: 0;
+} */
+input::placeholder {
+
+  padding-left: 5px;
+}
+
+.gradient
+{
+  background-image: linear-gradient(#EEEEEE ,white);
+}
+
+.s-name{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+.btn-danger:hover{
+    background-color: #510D0E;
+}
+.btn-primary:hover{
+    background-color: #0A3F77;;
+}
+
+footer p{
+color: #AAAAAA;
+font-weight: 700;
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- my styleSheet -->
+      <link rel="stylesheet" href="css/style.css">
+    <title>BookMarker</title>
+</head>
+<body>
+<div class="container-lg mt-5 pt-3">
+    <h1 class="fw-bolder">Bookmarker</h1>
+    <div class="line w-100 mt-5"></div>
+    <section class="bookmark bg-gradient  m-3 text-center overflow-hidden ">
+<h4 class="mt-5 fw-bolder" >Bookmark your favorite sites</h4>
+
+<div class="w-75 mx-auto mt-4 ">
+    <label for="sideName" class="fw-bold">Site Name</label>
+    <input type="text" id="siteName" placeholder="Bookmark Name" class="rounded-1 my-3" >
+    <div class="alert alert-danger d-none fw-bolder " id="alertName" role="alert">
+       Name is Required!
+      </div>
+    <div class="alert alert-danger d-none fw-bolder  " id="alertexist" role="alert">
+        this name already exist!
+      </div>
+    <label for="sideUrl" class="fw-bold">Site URL</label>
+    <input type="text" id="sideUrl" placeholder="Website Url" class=" rounded-1 my-3" >
+    <div class="alert alert-danger d-none fw-bolder " id="alertUrl" role="alert">
+        url is Required!
+      </div>
+    <button class="btn btn-primary mt-3 mb-5" onclick="addlinks()" id="btnSubmit">Submit</button>
+    <button class="btn btn-primary mt-3 mb-5 d-none "  id="btnUpdate" onclick="changelinks()">Update</button>
+
+
+</div>
+
+    </section>
+
+    <div class="links mt-4" id="outPut">
+
+
+    </div>
+
+    <div class="line w-100 mt-5"></div>
+    <footer>
+        <p class="mt-5">© 2019 Bookmarker Inc.</p>
+    </footer>
+</div>
+
+
+
+
+
+
+
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
